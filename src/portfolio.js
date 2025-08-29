@@ -19,7 +19,7 @@ const illustration = {
 
 const greeting = {
   username: "Pratham Bhandari",
-  title: "Hi all, I'm Pratham",
+  title: "Hello, I am Pratham",
   subTitle: emoji(
     "A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Flutter / Django and some other cool libraries and frameworks."
   ),
