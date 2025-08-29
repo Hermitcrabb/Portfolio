@@ -36,9 +36,8 @@ const socialMediaLinks = {
   github: "https://github.com/Hermitcrabb",
   linkedin: "https://www.linkedin.com/in/pratham-bhandari-36b903351/",
   gmail: "prathambhandari2000@gmail.com",
-  instagram:"https://www.instagram.com/_bhandari_pratham_/",
-  
-  
+  instagram: "https://www.instagram.com/_bhandari_pratham_/",
+
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -50,10 +49,14 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-  emoji("⚡ Building robust backend systems using Python and Django"),
-  emoji("⚡ Designing and training Machine Learning models using Scikit-learn and TensorFlow"),
-  emoji("⚡ REST API development and integration with frontend frameworks"),
-  emoji("⚡ Data analysis and visualization using Pandas, NumPy, and Matplotlib"),
+    emoji("⚡ Building robust backend systems using Python and Django"),
+    emoji(
+      "⚡ Designing and training Machine Learning models using Scikit-learn and TensorFlow"
+    ),
+    emoji("⚡ REST API development and integration with frontend frameworks"),
+    emoji(
+      "⚡ Data analysis and visualization using Pandas, NumPy, and Matplotlib"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -109,7 +112,7 @@ const educationInfo = {
       desc: "Graduated in Computer Engineering from Nepal Engineering College (NEC).",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
     {
@@ -183,19 +186,21 @@ const bigProjects = {
     {
       image: require("./assets/images/Meroswastha.png"),
       projectName: "Mero Swastha",
-      projectDesc: "Mero Swastha is a Flutter-based health and fitness app powered by Firebase, designed to help users maintain a healthier lifestyle. It provides personalized diet and workout recommendations through custom algorithms, allows users to track their profile details such as age, weight, height, gender, and meal type, and offers premium services where users can hire trainers, chat with them in real time, and make secure payments via eSewa.",
+      projectDesc:
+        "Mero Swastha is a Flutter-based health and fitness app powered by Firebase, designed to help users maintain a healthier lifestyle. It provides personalized diet and workout recommendations through custom algorithms, allows users to track their profile details such as age, weight, height, gender, and meal type, and offers premium services where users can hire trainers, chat with them in real time, and make secure payments via eSewa.",
       footerLink: [
-       {
-        name: "",
-        url: ""
-       }
+        {
+          name: "",
+          url: ""
+        }
         //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/sportscart.webp"),
       projectName: "Sports Cart",
-      projectDesc: "Sportscart is an e-commerce web application built with Python and Django, designed for selling sports items online. It features a user-friendly product catalog, shopping cart, and order management system. The platform supports user authentication, secure checkout, and admin tools for managing inventory, categories, and customer orders, making it a complete solution for sports equipment sales.",
+      projectDesc:
+        "Sportscart is an e-commerce web application built with Python and Django, designed for selling sports items online. It features a user-friendly product catalog, shopping cart, and order management system. The platform supports user authentication, secure checkout, and admin tools for managing inventory, categories, and customer orders, making it a complete solution for sports equipment sales.",
       footerLink: [
         {
           name: "",
@@ -226,7 +231,7 @@ const achievementSection = {
         {
           name: "Certification",
           url: "https://drive.google.com/file/d/1a7cRYIOvO2FyHaCHEY1KrysLxSuSIo_X/view?usp=drive_link"
-        },
+        }
       ]
     },
     {
@@ -241,7 +246,7 @@ const achievementSection = {
           url: "https://drive.google.com/file/d/1_s05R5d0JyW83-a4LWZK94GGGauPNwaU/view?usp=drive_link"
         }
       ]
-    },
+    }
 
     /*{
       title: "PWA Web App Developer",
@@ -264,21 +269,18 @@ const achievementSection = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "#",
+  subtitle: "#",
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "#",
       title: "#",
-      description:
-        "#"
+      description: "#"
     },
     {
       url: "#",
       title: "#",
-      description:
-        "#"
+      description: "#"
     }
   ],
   display: false // Set false to hide this section, defaults to true
@@ -325,7 +327,8 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:"Discuss a project or just want to say hi? My Inbox is open for all.",
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+9779861399497",
   email_address: "prathambhandari2000@gmail.com"
 };
