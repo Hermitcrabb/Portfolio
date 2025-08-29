@@ -11,9 +11,11 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
+
   if (!greeting.displayGreeting) {
     return null;
   }
+
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -23,10 +25,10 @@ export default function Greeting() {
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
+
               <p
                 className={
                   isDark
@@ -36,8 +38,10 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
+
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
+
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
@@ -52,6 +56,7 @@ export default function Greeting() {
               </div>
             </div>
           </div>
+
           <div className="greeting-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
@@ -59,7 +64,7 @@ export default function Greeting() {
               <img
                 alt="man sitting on table"
                 src={require("../../assets/images/manOnTable.svg")}
-              ></img>
+              />
             )}
           </div>
         </div>

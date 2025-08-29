@@ -6,7 +6,6 @@ import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
-
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
@@ -14,7 +13,6 @@ const splashScreen = {
 };
 
 // Summary And Greeting Section
-
 const illustration = {
   animated: true // Set to false to use static SVG
 };
@@ -31,20 +29,16 @@ const greeting = {
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
   github: "https://github.com/Hermitcrabb",
   linkedin: "https://www.linkedin.com/in/pratham-bhandari-36b903351/",
   gmail: "prathambhandari2000@gmail.com",
   instagram: "https://www.instagram.com/_bhandari_pratham_/",
 
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
-
 const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
@@ -59,50 +53,22 @@ const skillsSection = {
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "Machine Learning",
-      fontAwesomeClassname: "fas fa-brain"
-    }
+    {skillName: "html-5", fontAwesomeClassname: "fab fa-html5"},
+    {skillName: "css3", fontAwesomeClassname: "fab fa-css3-alt"},
+    {skillName: "JavaScript", fontAwesomeClassname: "fab fa-js"},
+    {skillName: "sql-database", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "firebase", fontAwesomeClassname: "fas fa-fire"},
+    {skillName: "python", fontAwesomeClassname: "fab fa-python"},
+    {skillName: "docker", fontAwesomeClassname: "fab fa-docker"},
+    {skillName: "Machine Learning", fontAwesomeClassname: "fas fa-brain"}
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
-
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
       schoolName: "Nepal Engineering College",
@@ -126,59 +92,45 @@ const educationInfo = {
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
+// Tech Stack Section
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "60%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "80%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "80%"
-    }
+    {Stack: "Frontend/Design", progressPercentage: "60%"},
+    {Stack: "Backend", progressPercentage: "80%"},
+    {Stack: "Programming", progressPercentage: "80%"}
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false
 };
 
-// Work experience section
-
+// Work Experience
 const workExperiences = {
-  display: false, //Set it to true to show workExperiences Section
+  display: false,
   experience: [
     {
       role: "Front-End Developer",
       company: "Quora",
       companylogo: require("./assets/images/quoraLogo.png"),
       date: "May 2017 - May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     },
     {
       role: "Software Engineer Intern",
       company: "Airbnb",
       companylogo: require("./assets/images/airbnbLogo.png"),
       date: "Jan 2015 - Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..."
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
+// Open Source Section
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: false
 };
 
-// Some big projects you have worked on
-
+// Big Projects Section
 const bigProjects = {
   title: "Big Projects",
   subtitle: "Some of my projects that I have worked on",
@@ -187,144 +139,94 @@ const bigProjects = {
       image: require("./assets/images/Meroswastha.png"),
       projectName: "Mero Swastha",
       projectDesc:
-        "Mero Swastha is a Flutter-based health and fitness app powered by Firebase, designed to help users maintain a healthier lifestyle. It provides personalized diet and workout recommendations through custom algorithms, allows users to track their profile details such as age, weight, height, gender, and meal type, and offers premium services where users can hire trainers, chat with them in real time, and make secure payments via eSewa.",
-      footerLink: [
-        {
-          name: "",
-          url: ""
-        }
-        //  you can add extra buttons here.
-      ]
+        "Mero Swastha is a Flutter-based health and fitness app powered by Firebase...",
+      footerLink: [{name: "", url: ""}]
     },
     {
       image: require("./assets/images/sportscart.webp"),
       projectName: "Sports Cart",
       projectDesc:
-        "Sportscart is an e-commerce web application built with Python and Django, designed for selling sports items online. It features a user-friendly product catalog, shopping cart, and order management system. The platform supports user authentication, secure checkout, and admin tools for managing inventory, categories, and customer orders, making it a complete solution for sports equipment sales.",
-      footerLink: [
-        {
-          name: "",
-          url: ""
-        }
-      ]
+        "Sportscart is an e-commerce web application built with Python and Django...",
+      footerLink: [{name: "", url: ""}]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// Achievements Section
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
     "Achievements, Certifications and Some Cool Stuff that I have done !",
-
   achievementsCards: [
     {
       title: "Machine Learning Using Python",
       subtitle:
-        "Completed certification in Machine Learning using Python with hands-on projects and practical applications",
+        "Completed certification in Machine Learning using Python with hands-on projects",
       image: require("./assets/images/simplilearn-logo.png"),
       imageAlt: "Simplilearn Logo",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/1a7cRYIOvO2FyHaCHEY1KrysLxSuSIo_X/view?usp=drive_link"
+          url: "https://drive.google.com/file/d/1a7cRYIOvO2FyHaCHEY1KrysLxSuSIo_X/view"
         }
       ]
     },
     {
       title: "Karmalaya X",
       subtitle:
-        "Participated in Karmalaya X, a college innovation event, where we pitched an AI solution for the Deaf and Hard of Hearing.",
+        "Participated in Karmalaya X, where we pitched an AI solution for the Deaf and Hard of Hearing.",
       image: require("./assets/images/carrd-logo.jpg"),
       imageAlt: "Carrd Logo",
       footerLink: [
         {
           name: "Karmalaya X",
-          url: "https://drive.google.com/file/d/1_s05R5d0JyW83-a4LWZK94GGGauPNwaU/view?usp=drive_link"
+          url: "https://drive.google.com/file/d/1_s05R5d0JyW83-a4LWZK94GGGauPNwaU/view"
         }
       ]
     }
-
-    /*{
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    } */
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Blogs Section
-
 const blogSection = {
   title: "Blogs",
   subtitle: "#",
-  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "false",
   blogs: [
-    {
-      url: "#",
-      title: "#",
-      description: "#"
-    },
-    {
-      url: "#",
-      title: "#",
-      description: "#"
-    }
+    {url: "#", title: "#", description: "#"},
+    {url: "#", title: "#", description: "#"}
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false
 };
 
-// Talks Sections
-
+// Talks Section
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
     "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
   ),
-
-  talks: [
-    {
-      title: "",
-      subtitle: "",
-      slides_url: "",
-      event_url: ""
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
+  talks: [{title: "", subtitle: "", slides_url: "", event_url: ""}],
+  display: false
 };
 
 // Podcast Section
-
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
   podcast: [],
-  display: false // Set false to hide this section, defaults to true
+  display: false
 };
 
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
+// Contact Info
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
@@ -334,13 +236,12 @@ const contactInfo = {
 };
 
 // Twitter Section
-
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  userName: "twitter",
+  display: false
 };
 
-const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true;
 
 export {
   illustration,
