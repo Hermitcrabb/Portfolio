@@ -184,9 +184,22 @@ const achievementSection = {
           url: "https://drive.google.com/file/d/1_s05R5d0JyW83-a4LWZK94GGGauPNwaU/view"
         }
       ]
-    }
+    },
+    {
+      title: "Scintific Calculator",
+      subtitle:
+        "Developed a scientific calculator in Python with ASCII-based interface and advanced mathematical functions.",
+        image: require("./assets/images/freeCC-logo.jpg"),
+        imageAlt: "freeCodeCamp Logo",
+      footerLink: [
+        {
+          name: "Scientific Calculator",
+          url: "https://www.freecodecamp.org/certification/prathambhandari/scientific-computing-with-python-v7"
+        }
+      ]
+    },
   ],
-  display: true
+    display: true
 };
 
 // Blogs Section
